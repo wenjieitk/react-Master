@@ -1,0 +1,19 @@
+{
+  "name": "react-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://wenjieitk@github.com/wenjieitk/react-Master.git"
+  },
+  "author": "wen jie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wenjieitk/react-Master/issues"
+  },
+  "homepage": "https://github.com/wenjieitk/react-Master#readme"
+}
