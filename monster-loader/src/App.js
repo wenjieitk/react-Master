@@ -20,6 +20,7 @@ class App extends Component {
   }
 
   /**
+   * To-Noted:
    * arrow bind this to where it 1st declare
    * https://reactjs.org/docs/handling-events.html
    * when it's event handler, we dont run the function: this.handleClick instead of this.handleClick()
