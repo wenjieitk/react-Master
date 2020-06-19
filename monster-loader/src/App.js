@@ -19,6 +19,13 @@ class App extends Component {
       .then(users => this.setState({monsters: users}))
   }
 
+  /**
+   * arrow bind this to where it 1st declare
+   */
+  handleChange = (e) => {
+    this.setState({searchField: e.target.value}) //, () => console.log(this.state) <--- do something after the event changes in the callBack
+  }
+
   render() {
     const { monsters, searchField } = this.state
     const filteredMonsters = monsters.filter((monster) => {
@@ -28,9 +35,7 @@ class App extends Component {
       <div className="App">
         <SearchBox 
           placeholder = 'search monster'
-          handleChange = {
-            e => this.setState({searchField: e.target.value}) //, () => console.log(this.state) <--- do something after the event changes in the callBack
-          }
+          handleChange = {this.handleChange}
         />
         <Cardlist monsters = {filteredMonsters} />
       </div>
