@@ -26,7 +26,8 @@ class App extends Component {
    * when it's event handler, we dont run the function: this.handleClick instead of this.handleClick()
    */
   handleChange = (e) => {
-    this.setState({searchField: e.target.value}) //, () => console.log(this.state) <--- do something after the event changes in the callBack
+    this.setState({searchField: e.target.value}, 
+      () => console.log(this.state) ) // <--- do something after the event changes in the callBack
   }
 
   render() {
